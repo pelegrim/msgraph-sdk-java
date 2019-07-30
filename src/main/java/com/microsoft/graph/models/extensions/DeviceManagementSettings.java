@@ -10,6 +10,7 @@ import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.generated.DerivedCredentialProviderType;
 
 
 import com.google.gson.JsonObject;
@@ -59,6 +60,46 @@ public class DeviceManagementSettings implements IJsonBackedObject {
     @SerializedName("secureByDefault")
     @Expose
     public Boolean secureByDefault;
+
+    /**
+     * The Enhanced Jail Break.
+     * Is feature enabled or not for enhanced jailbreak detection.
+     */
+    @SerializedName("enhancedJailBreak")
+    @Expose
+    public Boolean enhancedJailBreak;
+
+    /**
+     * The Device Inactivity Before Retirement In Day.
+     * When the device does not check in for specified number of days, the company data might be removed and the device will not be under management. Valid values 30 to 270
+     */
+    @SerializedName("deviceInactivityBeforeRetirementInDay")
+    @Expose
+    public Integer deviceInactivityBeforeRetirementInDay;
+
+    /**
+     * The Derived Credential Provider.
+     * The Derived Credential Provider to use for this account.
+     */
+    @SerializedName("derivedCredentialProvider")
+    @Expose
+    public DerivedCredentialProviderType derivedCredentialProvider;
+
+    /**
+     * The Derived Credential Url.
+     * The Derived Credential Provider self-service URI.
+     */
+    @SerializedName("derivedCredentialUrl")
+    @Expose
+    public String derivedCredentialUrl;
+
+    /**
+     * The Android Device Administrator Enrollment Enabled.
+     * The property to determine if Android device administrator enrollment is enabled for this account.
+     */
+    @SerializedName("androidDeviceAdministratorEnrollmentEnabled")
+    @Expose
+    public Boolean androidDeviceAdministratorEnrollmentEnabled;
 
 
     /**

@@ -29,7 +29,7 @@ public class DeviceManagementGetEffectivePermissionsCollectionResponse implement
 
     @SerializedName("value")
     @Expose
-    public java.util.List<RolePermission> value;
+    public java.util.List<String> value;
 
     @SerializedName("@odata.nextLink")
     @Expose(serialize = false)
@@ -80,12 +80,5 @@ public class DeviceManagementGetEffectivePermissionsCollectionResponse implement
         this.serializer = serializer;
         rawObject = json;
 
-
-        if (json.has("value")) {
-            final JsonArray array = json.getAsJsonArray("value");
-            for (int i = 0; i < array.size(); i++) {
-                value.get(i).setRawObject(serializer, (JsonObject) array.get(i));
-            }
-        }
     }
 }

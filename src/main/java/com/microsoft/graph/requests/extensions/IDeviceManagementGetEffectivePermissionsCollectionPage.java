@@ -23,5 +23,5 @@ import com.google.gson.JsonObject;
 /**
  * The interface for the Device Management Get Effective Permissions Collection Page.
  */
-public interface IDeviceManagementGetEffectivePermissionsCollectionPage extends IBaseCollectionPage<RolePermission, IDeviceManagementGetEffectivePermissionsCollectionRequestBuilder> {
+public interface IDeviceManagementGetEffectivePermissionsCollectionPage extends IBaseCollectionPage<String, IDeviceManagementGetEffectivePermissionsCollectionRequestBuilder> {
 }

@@ -59,7 +59,7 @@ public class DeviceManagementGetEffectivePermissionsCollectionRequest extends Ba
     public IDeviceManagementGetEffectivePermissionsCollectionPage buildFromResponse(final DeviceManagementGetEffectivePermissionsCollectionResponse response) {
         final IDeviceManagementGetEffectivePermissionsCollectionRequestBuilder builder;
         if (response.nextLink != null) {
-            builder = new DeviceManagementGetEffectivePermissionsCollectionRequestBuilder(response.nextLink, getBaseRequest().getClient(), /* options */ null, /* scope */ null);
+            builder = new DeviceManagementGetEffectivePermissionsCollectionRequestBuilder(response.nextLink, getBaseRequest().getClient(), /* options */ null);
         } else {
             builder = null;
         }

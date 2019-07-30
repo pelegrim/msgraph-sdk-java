@@ -39,7 +39,7 @@ public class DeviceManagementPartner extends Entity implements IJsonBackedObject
 
     /**
      * The Partner State.
-     * Partner state of this tenant. Possible values are: unknown, unavailable, enabled, terminated, rejected, unresponsive.
+     * Partner state of this tenant
      */
     @SerializedName("partnerState")
     @Expose
@@ -47,7 +47,7 @@ public class DeviceManagementPartner extends Entity implements IJsonBackedObject
 
     /**
      * The Partner App Type.
-     * Partner App type. Possible values are: unknown, singleTenantApp, multiTenantApp.
+     * Partner App type
      */
     @SerializedName("partnerAppType")
     @Expose
@@ -76,6 +76,22 @@ public class DeviceManagementPartner extends Entity implements IJsonBackedObject
     @SerializedName("isConfigured")
     @Expose
     public Boolean isConfigured;
+
+    /**
+     * The When Partner Devices Will Be Removed.
+     * DateTime in UTC when PartnerDevices will be removed. This will become obselete soon.
+     */
+    @SerializedName("whenPartnerDevicesWillBeRemoved")
+    @Expose
+    public java.util.Calendar whenPartnerDevicesWillBeRemoved;
+
+    /**
+     * The When Partner Devices Will Be Marked As Non Compliant.
+     * DateTime in UTC when PartnerDevices will be marked as NonCompliant. This will become obselete soon.
+     */
+    @SerializedName("whenPartnerDevicesWillBeMarkedAsNonCompliant")
+    @Expose
+    public java.util.Calendar whenPartnerDevicesWillBeMarkedAsNonCompliant;
 
     /**
      * The When Partner Devices Will Be Removed Date Time.

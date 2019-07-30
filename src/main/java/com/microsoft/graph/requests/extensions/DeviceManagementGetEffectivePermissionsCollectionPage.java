@@ -24,7 +24,7 @@ import com.google.gson.annotations.*;
 /**
  * The class for the Device Management Get Effective Permissions Collection Page.
  */
-public class DeviceManagementGetEffectivePermissionsCollectionPage extends BaseCollectionPage<RolePermission, IDeviceManagementGetEffectivePermissionsCollectionRequestBuilder> implements IDeviceManagementGetEffectivePermissionsCollectionPage {
+public class DeviceManagementGetEffectivePermissionsCollectionPage extends BaseCollectionPage<String, IDeviceManagementGetEffectivePermissionsCollectionRequestBuilder> implements IDeviceManagementGetEffectivePermissionsCollectionPage {
 
     /**
      * A collection page for DeviceManagementGetEffectivePermissions.

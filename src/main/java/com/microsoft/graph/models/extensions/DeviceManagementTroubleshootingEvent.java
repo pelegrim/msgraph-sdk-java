@@ -10,6 +10,8 @@ import com.microsoft.graph.options.*;
 import com.microsoft.graph.serializer.*;
 import java.util.Arrays;
 import java.util.EnumSet;
+import com.microsoft.graph.models.extensions.DeviceManagementTroubleshootingErrorDetails;
+import com.microsoft.graph.models.extensions.KeyValuePair;
 import com.microsoft.graph.models.extensions.Entity;
 
 
@@ -42,6 +44,30 @@ public class DeviceManagementTroubleshootingEvent extends Entity implements IJso
     @SerializedName("correlationId")
     @Expose
     public String correlationId;
+
+    /**
+     * The Troubleshooting Error Details.
+     * Object containing detailed information about the error and its remediation.
+     */
+    @SerializedName("troubleshootingErrorDetails")
+    @Expose
+    public DeviceManagementTroubleshootingErrorDetails troubleshootingErrorDetails;
+
+    /**
+     * The Event Name.
+     * Event Name corresponding to the Troubleshooting Event. It is an Optional field
+     */
+    @SerializedName("eventName")
+    @Expose
+    public String eventName;
+
+    /**
+     * The Additional Information.
+     * A set of string key and string value pairs which provides additional information on the Troubleshooting event
+     */
+    @SerializedName("additionalInformation")
+    @Expose
+    public java.util.List<KeyValuePair> additionalInformation;
 
 
     /**

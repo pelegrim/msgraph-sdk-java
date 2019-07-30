@@ -28,6 +28,16 @@ public class DeviceManagementGetEffectivePermissionsCollectionRequestBuilder ext
      * @param requestUrl     the request URL
      * @param client         the service client
      * @param requestOptions the options for this request
+     */
+    public DeviceManagementGetEffectivePermissionsCollectionRequestBuilder(final String requestUrl, final IBaseClient client, final java.util.List<? extends Option> requestOptions) {
+        super(requestUrl, client, requestOptions);
+    }
+    /**
+     * The request builder for this collection of DeviceManagement
+     *
+     * @param requestUrl     the request URL
+     * @param client         the service client
+     * @param requestOptions the options for this request
      * @param scope the scope
      */
     public DeviceManagementGetEffectivePermissionsCollectionRequestBuilder(final String requestUrl, final IBaseClient client, final java.util.List<? extends Option> requestOptions, final String scope) {
